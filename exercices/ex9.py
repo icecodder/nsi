@@ -10,4 +10,4 @@ for table in range(11):
 
     tab1.append(resultats)
 
-pprint(tab1))
+pprint(tab1)
