@@ -1,13 +1,13 @@
 from pprint import pprint
+from random import randint
 
-tab1 = []
+tab1 = [[table * i for i in range(11)] for table in range(11)]
 
-for table in range(11):
-    resultats = []
+#pprint(tab1)
 
-    for i in range(11):
-        resultats.append(table * i)
+keno = [[5 * l + (i + 1) for i in range(5)] for l in range(14)]
 
-    tab1.append(resultats)
+for _ in range(3):
+  keno[randint(0, 13)][randint(0, 4)] = "X"
 
-pprint(tab1)
+pprint(keno)
