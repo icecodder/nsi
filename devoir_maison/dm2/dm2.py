@@ -35,4 +35,3 @@ plt.ylabel("Nombre de carré c(n)")
 plt.legend()
 plt.grid(True)
 plt.show()
-
