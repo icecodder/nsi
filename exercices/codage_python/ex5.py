@@ -1,9 +1,5 @@
 def char_utf8(base, nb):
     for i in range(base, base + nb):
-        char_decimal = i
-        char_hex = hex(char_decimal)
-        char = chr(char_decimal)
-        print(f"{char_decimal}\t{char_hex}\t{char}")
+        print(f"{i}\t{hex(i)}\t{chr(i)}")
 
 char_utf8(8200, 200)
-
