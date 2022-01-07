@@ -1,0 +1,25 @@
+table, th, td {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+table#t01 {
+  width: 100%;
+  background-color: #f1f1c1;
+}
+tr#name {
+  font-weight: bold;
+  background-color: #00fff6;
+}
+tr.paire {
+  background-color: gray;
+}
+tr.impaire {
+  background-color: #f1f1c1;
+}
+td.col {
+  background-color: #00fff6;
+}
