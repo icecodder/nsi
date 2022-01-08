@@ -120,15 +120,31 @@ def draw_apple():
 # Fonction pour le déplacement du serpent
 def left(event):
   global MOV
+
+  if MOV == (1, 0):
+    return
+
   MOV = (-1, 0)
 def right(event):
   global MOV
+
+  if MOV == (-1, 0):
+    return
+
   MOV = (1, 0)
 def up(event):
   global MOV
+
+  if MOV == (0, 1):
+    return
+
   MOV = (0, -1)
 def down(event):
   global MOV
+
+  if MOV == (0, -1):
+    return
+
   MOV = (0, 1)
 
 # On ajoute ces fontions au clavier
@@ -187,12 +203,12 @@ def main():
   size = 500 / nb_cases
   grid_x = 0
   while grid_x <= nb_cases:
-    plateau.create_line(0, size * grid_x, width, size * grid_x, fill="gray")
+    plateau.create_line(0, size * grid_x, width, size * grid_x, fill="#DCDCDC")
     grid_x += 1
 
   grid_y = 0
   while grid_y <= nb_cases:
-    plateau.create_line(size * grid_y, 0, size * grid_y, height, fill="gray")
+    plateau.create_line(size * grid_y, 0, size * grid_y, height, fill="#DCDCDC")
     grid_y += 1
 
   # Place la pomme sur le plateau
@@ -212,7 +228,7 @@ def main():
     window.after(70, main)
   else:
     # Rappel de la fonction principale
-    window.after(70, main)
+    window.after(90, main)
 
 # Appel de la fonction principale au lancement de la fenetre
 window.after(0, main)
