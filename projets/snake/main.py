@@ -23,7 +23,7 @@ plateau = tk.Canvas(window, width=width, height=height, bg="white")
 plateau.pack(side=BOTTOM)
 
 # Nombre de cases et taille d'une case
-nb_cases = 30
+nb_cases = 20
 case_height = height / nb_cases
 case_width = width / nb_cases
 
@@ -225,7 +225,7 @@ def main():
     reset()
 
     # Rappel de la fonction principale
-    window.after(70, main)
+    window.after(0, main)
   else:
     # Rappel de la fonction principale
     window.after(90, main)
