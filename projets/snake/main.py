@@ -88,14 +88,14 @@ def update_snake():
 
 # Ajout des collisions
 def death_snake(new_head):
-  global PERDU
+  global LOSE
 
   # Coordonnées de la tete du serpent
   head_x, head_y = new_head
 
   # Si on sort du plateau ou si on mange lui meme, on meurt
   if (is_in_snake(new_head) and MOV != (0, 0) or head_x < 0 or head_y < 0 or head_x >= nb_cases or head_y >= nb_cases):
-    PERDU = True
+    LOSE = True
 
 # =============================================================================
 # Gestion de la pomme
@@ -172,20 +172,20 @@ def update_score():
 # =============================================================================
 
 def reset():
-  global SNAKE, APPLE, MOV, SCORE, PERDU
+  global SNAKE, APPLE, MOV, SCORE, LOSE
 
   SNAKE = [random_case()] # Serpent initial
   APPLE = random_apple() # Pomme inital
   MOV = (0, 0) # Mouvemement initial, 0 = aucun mouvement
   SCORE = 0 # Score initial
-  PERDU = False
+  LOSE = False
 
 # Variable globale
 SNAKE = [random_case()] # Serpent initial
 APPLE = random_apple() # Pomme inital
 MOV = (0, 0) # Mouvemement initial, 0 = aucun mouvement
 SCORE = 0 # Score initial
-PERDU = False
+LOSE = False
 
 # Fonction principale
 def main():
@@ -216,7 +216,7 @@ def main():
   # Place le serpent sur le plateau
   draw_snake(SNAKE)
 
-  if PERDU:
+  if LOSE:
     # Mis à jour du score
     score.delete(1.0, END)
     score.insert(END, f"Perdu avec un score de: {SCORE}")
