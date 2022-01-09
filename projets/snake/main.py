@@ -39,7 +39,7 @@ def fill_case(x, y, color):
   y0 = y * case_height
   x1 = x0 + case_width
   y1 = y0 + case_height
-  plateau.create_rectangle(x0, y0, x1, y1, fill=color)
+  plateau.create_rectangle(x0, y0, x1, y1, fill=color, outline=color)
 
 # =============================================================================
 # Gestion du serpent
