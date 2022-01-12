@@ -228,7 +228,7 @@ def main():
     window.after(0, main)
   else:
     # Rappel de la fonction principale
-    window.after(90, main)
+    window.after(100, main)
 
 # Appel de la fonction principale au lancement de la fenetre
 window.after(0, main)
