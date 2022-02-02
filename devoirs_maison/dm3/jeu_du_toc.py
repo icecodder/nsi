@@ -1,3 +1,8 @@
+"""
+Jeu du TOCK (version simplifiée)
+Auteur: Max CHARRIER
+License: MIT (https://github.com/icecodder/nsi)
+"""
 
 # Importation des modules
 from pprint import pprint # Pretty-Print pour afficher des listes plus jolies
