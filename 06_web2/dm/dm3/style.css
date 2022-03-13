@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
+
+* {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 900;
+}
+
+#title {
+    font-weight: 700;
+}
+#subtitle {
+    font-weight: 300;
+}
+
+#verbe-francais {
+    font-weight: 700;
+}

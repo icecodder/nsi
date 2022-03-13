@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 3</title>
+
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h2>Exercice 6 : parcours en vélo</h2>
+
+    <a href="#">
+        <p id="cacher1" onclick="cacherTableau()">
+            [-] Calcul de distances
+        </p>
+    </a>
+    <a href="#">
+        <p id="montrer1" style="display:none" onclick="montrerTableau()">
+            [+] Calcul de distances
+        </p>
+    </a>
+    
+    <div id="saisieTableau"><br>
+        <label for="nbSemaines">Saisir le nombre de semaines.</label><br>
+        <input type="text" id="nbSemaines" name="nb_semaines" value="5"><br><br>
+
+        <label for="nbLignes">Saisir le nombre de lignes.</label><br>
+        <input type="text" id="nbLignes" name="nb_lignes" value="2"><br><br>
+
+        <label for="taux">Saisir le taux d'évolution en %.</label><br>
+        <input type="text" id="taux" name="taux" value="5"><br><br>
+
+        <label for="dInit">Distance de la première semaine.</label><br>
+        <input type="text" id="dInit" name="d_init" value="10"><br><br>
+
+        <button type="submit" onclick="calculerDistances()">Envoyer la saisie</button>
+    </div>
+
+    <div id="cadreTableau"></div>
+
+    <a href="#">
+        <p id="cacher2" onclick="cacherImage()">
+            [-] Quelques vélos
+        </p>
+    </a>
+    <a href="#">
+        <p id="montrer2" style="display:none" onclick="montrerImage()">
+            [+] Quelques vélos
+        </p>
+    </a>
+    
+    <div id="cadreVelos">
+        <a href="#"><p onclick="changerImage()">Changer l'image</p></a>
+        <img id="cadreImageVelo" src="velo_1_640.jpg" style="width:50%">
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM2 - Carrousel</title>
+
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="showSlides(1)">
+    <h2>DM2 - Carrousel</h2>
+
+    <div id="carrousel">
+        <div class="slides">
+          <img src="img/img1.jpg" style="width:100%">
+        </div>
+      
+        <div class="slides">
+          <img src="img/img2.jpg" style="width:100%">
+        </div>
+      
+        <div class="slides">
+          <img src="img/img3.jpg" style="width:100%">
+        </div>
+        
+        <div class="slides">
+            <img src="img/img4.jpg" style="width:100%">
+        </div>
+
+        <div class="slides">
+            <img src="img/img5.jpg" style="width:100%">
+        </div>
+
+        <div class="slides">
+            <img src="img/img6.jpg" style="width:100%">
+        </div>
+
+        <a id="prev" onclick="slides(-1)">&#10094;</a>
+        <a id="next" onclick="slides(1)">&#10095;</a>
+
+        <div id="interaction-button">
+          <button type="button" id="auto" onclick="auto()">Auto</button>
+          <button type="button" id="pause" onclick="pause()" disabled="disabled">Pause</button>
+        </div>
+      </div>
+</body>
+</html>

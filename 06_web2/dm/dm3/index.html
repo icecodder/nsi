@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM3 - Verbes irreguliers</title>
+
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="lancer()">
+    <h2>DM3 - Verbes irreguliers</h2>
+
+    <p id="title">Revision des verbes irreguliers de l'anglais</p>
+    <p id="subtitle">Remplir les champs avec le verbe en anglais.</p>
+
+    <br>
+
+    <p id="cadre1"></p>
+    <div id="cadre2">
+        <p>Infinitif</p>
+        <input type="text" name="verbe-infinitif" id="verbe-infinitif">
+
+        <p>Prétérit</p>
+        <input type="text" name="verbe-preterit" id="verbe-preterit">
+
+        <p>Participe passé</p>
+        <input type="text" name="verbe-participe" id="verbe-participe">
+    </div>
+
+    <br>
+
+    <button id="valider" type="button" onclick="valider()">Valider</button>
+
+    <div id="cadre3"></div>
+
+    <button id="recommencer" type="button" onclick="recommencer()" disabled="disabled">Recommencer</button>
+</body>
+</html>

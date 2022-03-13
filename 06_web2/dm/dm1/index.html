@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM1 - Echeancier</title>
+
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="lancer()">
+    <h2>DM1 - Echeancier</h2>
+
+    <p>
+        Montant: <input type="text" name="montant" id="montant" value="200000">
+    </p>
+    <p>
+        Annuite: <input type="text" name="annuite" id="annuite" value="11182.57">
+    </p>
+    <p>
+        Taux: <input type="text" name="taux" id="taux" value="0.025">
+    </p>
+    <button type="button" onclick="lancer()">Mettre à jour</button><br><br>
+
+    <div id="tableau"></div>
+</body>
+</html>

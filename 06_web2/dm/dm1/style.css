@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;900&display=swap');
+
+* {
+    font-family: "Rubik", sans-serif;
+}
+
+h2 {
+    font-weight: bolder;
+}
+
+button {
+    padding: 4px 10px;
+}
+
+table {
+    border: 2px solid black;
+    font-weight: lighter;
+    border-spacing: 0;
+}
+
+#tableau tr:first-child td {
+    font-weight: normal;
+}
+
+td {
+    text-align: center;
+    border: 1px solid gray;
+    padding: 1px 6px;
+    background-color: rgb(250, 250, 250);
+}

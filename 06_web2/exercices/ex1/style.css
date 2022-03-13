@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    background-color: rgb(220, 220, 220);
+}
+
+#affichage {
+     margin: 5px;
+    background-color: rgb(240, 240, 240);
+    border: 2px solid rgb(150, 150, 150);
+    border-radius: 10px;
+    font-family: Georgia, serif;
+}
