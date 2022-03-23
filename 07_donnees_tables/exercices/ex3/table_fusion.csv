@@ -1,0 +1,10 @@
+IdEtu,IdMat,Nom,Prenom,Age,Sexe,Libelle,Note,Coeff
+1,1,Remin,Norbert,19,H,Maths,18,1
+1,2,Remin,Norbert,19,H,Stats,11,3
+1,5,Remin,Norbert,19,H,SQL,5,2.5
+3,1,Constant,Raphaelle,20,F,Maths,12,1
+3,5,Constant,Raphaelle,20,F,SQL,15,2.5
+4,5,Fleurot,Isabelle,19,F,SQL,2,2.5
+4,2,Fleurot,Isabelle,19,F,Stats,9,3
+4,1,Fleurot,Isabelle,19,F,Maths,7,1
+6,1,Josse,Francis,20,H,Maths,9,1
