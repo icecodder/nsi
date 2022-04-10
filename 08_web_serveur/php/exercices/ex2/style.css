@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container {
+    width: 750px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color: azure;
+}
+
+#buttons {
+    margin-top: 20px;
+}
+
+.preference {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-bottom: 10px;
+}

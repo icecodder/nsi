@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <form action="traitement3.php" method="post">
+            <h2>Formulaire pour réaliser un QCM en ligne :</h2>
+
+            <fieldset>
+                <legend>Identité</legend>
+
+                <div class="preference">
+                    <label for="classe">Classe :</label>
+                    <input type="text" name="classe" size="30">
+                </div>
+
+                <div class="preference">
+                    <label for="nom">Nom :</label>
+                    <input type="text" name="nom" size="30">
+                </div>
+
+                <div class="preference">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" name="prenom" size="30">
+                </div>
+
+                <div class="preference">
+                    <span>Âge</span>
+                    <select name="age">
+                        <option value="14">14 ans</option>
+                        <option value="15">15 ans</option>
+                        <option value="16">16 ans</option>
+                        <option value="17">17 ans</option>
+                        <option value="18">18 ans</option>
+                        <option value="19">19 ans</option>
+                        <option value="20">20 ans</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Les questions du QCM</legend>
+
+                <p><b>Pour insérer des scripts PHP, il faut utiliser les balises :</b></p>
+
+                <input type="radio" name="q1" value="rep1" id="rep1">
+                <label for="q1">&lt;script> PHP &lt;/script></label>
+                <br>
+
+                <input type="radio" name="q1" value="rep2" id="rep2">
+                <label for="q1">&lt;script type="text/php"></label>
+                <br>
+
+                <input type="radio" name="q1" value="rep3" id="rep3">
+                <label for="q1">&lt;? php ... ?></label>
+                <br>
+
+                <input type="radio" name="q1" value="rep4" id="rep4">
+                <label for="q1">&lt;?php>...&lt;/php></label>
+                <br>
+                <br>
+
+                <p><b>Le PHP est un langage :</b></p>
+                <input type="checkbox" name="q2rep1" id="q2rep1">
+                <label for="q2rep1">qui s'exécute sur le client.</label>
+                <br>
+                
+                <input type="checkbox" name="q2rep2" id="q2rep2">
+                <label for="q2rep2">qui s'exécute sur un serveur.</label>
+                <br>
+                
+                <input type="checkbox" name="q2rep3" id="q2rep3">
+                <label for="q2rep3">dont la licence est libre.</label>
+                <br>
+                
+                <input type="checkbox" name="q2rep4" id="q2rep4">
+                <label for="q2rep4">dont la licence est payante.</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Validation</legend>
+
+                <div id="boutons">
+                    <input type="submit" value="Valider">
+                    <input type="reset" value="Effacer le formulaire">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
