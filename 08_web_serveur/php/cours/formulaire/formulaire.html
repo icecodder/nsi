@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="title">Saisie d'information</div>
+        <br>
+
+        <form action="traitement.php" method="post">
+            <h1>Formulaire d'inscription</h1>
+
+            <fieldset>
+                <p>Les champs obligatoires sont suivis par un <strong><abbr>*</abbr></strong>.</p>
+                <legend>Vous êtes...</legend>
+
+                <p>
+                    <input type="radio" name="sexe" value="Mr" id="male">
+                    <label for="male">Monsieur</label>
+                    
+                    <input type="radio" name="sexe" value="Miss" id="female">
+                    <label for="female">Madame</label>
+                </p>
+
+                <div class="preference">
+                    <label for="name">Nom : <strong><abbr>*</abbr></strong></label>
+                    <input type="text" name="nom" size="30">
+                </div>
+
+                <div class="preference">
+                    <label for="name">Prénom : <strong><abbr>*</abbr></strong></label>
+                    <input type="text" name="prenom" size="30">
+                </div>
+
+                <div class="preference">
+                    <label for="name">Age :</label>
+                    <input type="text" name="age" size="10">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Scolarité..</legend>
+
+                <label for="francais">Français : </label>
+                <input type="checkbox" name="francais" id="francais">
+                
+                <label for="anglais">Anglais : </label>
+                <input type="checkbox" name="anglais" id="anglais">
+
+                <p>
+                    <span>Redoublant ?</span>
+
+                    <select name="redouble">
+                        <option value="Non">Non</option>
+                        <option value="Oui">Oui</option>
+                    </select>
+                </p>
+
+                <textarea name="message" cols="65" rows="10">Vos suggestions</textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Validation...</legend>
+
+                <div id="buttons">
+                    <input type="submit" value="Valider">
+                    <input type="reset" value="Effacer  le formulaire">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
