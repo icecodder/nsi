@@ -1,5 +1,5 @@
 # nsi
-Welcome to the repository of all my NSI projects.
+Welcome to the repository of everything I do in the NSI French education speciality.
 
 ## What is NSI?
 
